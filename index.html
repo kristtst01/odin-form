@@ -33,7 +33,13 @@
           </div>
           <div class="form-column">
             <label for="phone-nr">Phone Number</label>
-            <input type="text" name="phone-nr" id="phone-nr" required />
+            <input
+              type="text"
+              name="phone-nr"
+              id="phone-nr"
+              pattern="^\d{6,12}"
+              required
+            />
           </div>
         </div>
 
@@ -44,7 +50,7 @@
               type="password"
               name="password"
               id="password"
-              pattern="^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{8,}"
+              pattern="^(?=.*[a-zA-Z])(?=.*\d).{8,}"
               required
             />
           </div>
@@ -54,7 +60,7 @@
               type="password"
               name="password-cnfrm"
               id="password-cnfrm"
-              pattern="^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{8,}"
+              pattern="^(?=.*[a-zA-Z])(?=.*\d).{8,}"
               required
             />
           </div>
