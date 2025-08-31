@@ -8,12 +8,47 @@
   </head>
   <body>
     <div class="logo-container">
-      <img src="./logo.png" alt="Company Logo" width="1536" height="1024"/>
+      <img src="./logo.png" alt="Company Logo" width="1536" height="1024" />
       <h1>Sign up now to explore new recipe ideas</h1>
     </div>
     <div class="form-container">
       <form action="" method="post">
         <h1>Sign Up</h1>
+
+        <div class="form-row">
+          <div class="form-column">
+            <label for="f-name">First Name</label>
+            <input type="text" name="f-name" id="f-name" />
+          </div>
+          <div class="form-column">
+            <label for="l-name">Last Name</label>
+            <input type="text" name="l-name" id="l-name" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-column">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-column">
+            <label for="phone-nr">Phone Number</label>
+            <input type="text" name="phone-nr" id="phone-nr" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-column">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="form-column">
+            <label for="password-cnfrm">Confirm Password</label>
+            <input type="password" name="password-cnfrm" id="password-cnfrm" />
+          </div>
+        </div>
+        <div><button>Create Account</button></div>
+        <p>Already have an account? <span><a href="">Log in</a></span></p>
       </form>
     </div>
   </body>
