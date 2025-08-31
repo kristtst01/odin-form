@@ -12,43 +12,57 @@
       <h1>Sign up now to explore new recipe ideas</h1>
     </div>
     <div class="form-container">
-      <form action="" method="post">
+      <form action="" method="">
         <h1>Sign Up</h1>
 
         <div class="form-row">
           <div class="form-column">
             <label for="f-name">First Name</label>
-            <input type="text" name="f-name" id="f-name" />
+            <input type="text" name="f-name" id="f-name" required />
           </div>
           <div class="form-column">
             <label for="l-name">Last Name</label>
-            <input type="text" name="l-name" id="l-name" />
+            <input type="text" name="l-name" id="l-name" required />
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-column">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
+            <input type="email" name="email" id="email" required />
           </div>
           <div class="form-column">
             <label for="phone-nr">Phone Number</label>
-            <input type="text" name="phone-nr" id="phone-nr" />
+            <input type="text" name="phone-nr" id="phone-nr" required />
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-column">
             <label for="password">Password</label>
-            <input type="password" name="password" id="password" />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              pattern="^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{8,}"
+              required
+            />
           </div>
           <div class="form-column">
             <label for="password-cnfrm">Confirm Password</label>
-            <input type="password" name="password-cnfrm" id="password-cnfrm" />
+            <input
+              type="password"
+              name="password-cnfrm"
+              id="password-cnfrm"
+              pattern="^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{8,}"
+              required
+            />
           </div>
         </div>
         <div><button>Create Account</button></div>
-        <p>Already have an account? <span><a href="">Log in</a></span></p>
+        <p>
+          Already have an account? <span><a href="">Log in</a></span>
+        </p>
       </form>
     </div>
   </body>

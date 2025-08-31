@@ -36,12 +36,12 @@ body {
   align-items: center;
   justify-content: center;
   color: whitesmoke;
-  background-color: green;
+  background-color: #ffdca2;
+  color: #f98e2f;
 }
 
-
 .form-container h1 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .form-column {
@@ -54,4 +54,13 @@ body {
   gap: 50px;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+input:required:invalid {
+  border: 2px solid red;
+  outline: none;
+}
+input:required:invalid:focus {
+  border: 2px solid red;
+  outline: none;
 }
