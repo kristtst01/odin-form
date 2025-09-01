@@ -82,6 +82,10 @@ h1 {
   font-size: 1.6rem;
 }
 
+.form-container label {
+  font-size: 1.6rem;
+}
+
 input {
   padding: 1rem;
   border-radius: 4px;
