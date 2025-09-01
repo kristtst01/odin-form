@@ -1,3 +1,8 @@
+:root {
+  font-size: 62.5%;
+  --main-color: #fb9130;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,11 +15,16 @@ body {
   height: 100vh;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
 .logo-container {
-  background-color: #f98e2f;
+  background-color: var(--main-color);
   display: flex;
   flex: 1;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 24vh;
   align-items: center;
   flex-direction: column;
 }
@@ -37,7 +47,8 @@ body {
   justify-content: center;
   color: whitesmoke;
   background-color: #ffdca2;
-  color: #f98e2f;
+  color: var(--main-color);
+  padding-top: 14vh;
 }
 
 .form-container h1 {
@@ -56,17 +67,35 @@ body {
   justify-content: center;
 }
 
+.form-container button {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  padding: 1.5rem;
 
-input:required:invalid {
-  border: 2px solid red;
-  outline: none;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  border: var(--main-color) solid 2.5px;
+  background-color: white;
 }
+
+.form-container p {
+  font-size: 1.6rem;
+}
+
+input {
+  padding: 1rem;
+  border-radius: 4px;
+  border: var(--main-color) 2.5px solid;
+}
+
+
 input:required:invalid:focus {
-  border: 2px solid red;
-  outline: none;
-}
-input:required:valid:focus{
-  border: 2px solid green;
-  outline: none;
-}
+  background-color: rgba(255, 0, 0, 0.1);
 
+  outline: none;
+}
+input:required:valid:focus {
+  background-color: rgba(0, 255, 0, 0.1);
+
+  outline: none;
+}

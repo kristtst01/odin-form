@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="logo-container">
-      <img src="./logo.png" alt="Company Logo" width="1536" height="1024" />
+      <img src="./logo2.png" alt="Company Logo" width="1536" height="1024" />
       <h1>Sign up now to explore new recipe ideas</h1>
     </div>
     <div class="form-container">
@@ -29,7 +29,13 @@
         <div class="form-row">
           <div class="form-column">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" required />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="john@example.com"
+              required
+            />
           </div>
           <div class="form-column">
             <label for="phone-nr">Phone Number</label>
@@ -51,6 +57,7 @@
               name="password"
               id="password"
               pattern="^(?=.*[a-zA-Z])(?=.*\d).{8,}"
+              placeholder="jscA4kdi... [8 char min]"
               required
             />
           </div>
@@ -61,6 +68,7 @@
               name="password-cnfrm"
               id="password-cnfrm"
               pattern="^(?=.*[a-zA-Z])(?=.*\d).{8,}"
+              placeholder="jscA4kdi... [8 char min]"
               required
             />
           </div>
